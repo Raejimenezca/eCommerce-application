@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "268313518162",
+    "firebase_url": "https://tugangazo-f6ea9.firebaseio.com",
+    "project_id": "tugangazo-f6ea9",
+    "storage_bucket": "tugangazo-f6ea9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268313518162:android:ea8571e3bd668bf5",
+        "android_client_info": {
+          "package_name": "example.tugangazo.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "268313518162-aio1jgndt3805cllrpqg6u7p7ra31dn6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "example.tugangazo.com",
+            "certificate_hash": "5c9856ba37e1d8d1492d68b3e3a146b90499e6a3"
+          }
+        },
+        {
+          "client_id": "268313518162-6icqc15el5d2egqeq599dfd3np7q4c61.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfSe21HhQhy-2dIHpWcGQS9XPUOFU0yV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "268313518162-6icqc15el5d2egqeq599dfd3np7q4c61.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/product_image"
-            android:text="Descripción del producto"
+            android:text="Precio del producto"
             android:textAlignment="center"
             android:textSize="10dp"
             android:textColor="@color/colorPrimary"/>

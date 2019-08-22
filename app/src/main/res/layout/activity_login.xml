@@ -27,8 +27,8 @@
         android:layout_marginRight="15dp"
         android:hint="Ingresa el número de celular"
         android:inputType="number"
-        android:textColor="#000000"
-        android:textColorHint="#000000"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"
         android:textSize="17sp"
         android:textStyle="bold"/>
 
@@ -44,8 +44,8 @@
         android:layout_marginTop="6dp"
         android:hint="Ingresa la contraseña"
         android:inputType="textPassword"
-        android:textColor="#000000"
-        android:textColorHint="#000000"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"
         android:textSize="17sp"
         android:textStyle="bold"/>
     

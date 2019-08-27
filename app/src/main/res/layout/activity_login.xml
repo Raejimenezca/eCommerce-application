@@ -75,11 +75,11 @@
             android:id="@+id/forget_password_link"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Olvidar contraseña"
+            android:text="Restaurar contraseña"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:layout_marginLeft="80dp"/>
+            android:layout_marginLeft="30dp"/>
 
     </LinearLayout>
 

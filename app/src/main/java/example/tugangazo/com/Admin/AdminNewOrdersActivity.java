@@ -1,4 +1,4 @@
-package example.tugangazo.com;
+package example.tugangazo.com.Admin;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -21,6 +21,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import example.tugangazo.com.Model.AdminOrders;
+import example.tugangazo.com.R;
 
 public class AdminNewOrdersActivity extends AppCompatActivity {
     private RecyclerView ordersList;

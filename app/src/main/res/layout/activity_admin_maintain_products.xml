@@ -8,8 +8,9 @@
     android:layout_marginTop="20dp"
     android:layout_marginStart="15dp"
     android:layout_marginEnd="15dp"
+    android:layout_marginBottom="5dp"
     app:cardElevation="15dp"
-    tools:context=".AdminMaintainProductsActivity">
+    tools:context=".Admin.AdminMaintainProductsActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -65,16 +66,32 @@
             android:textColor="@color/colorPrimary"/>
 
         <Button
-            android:id="@+id/apply_changes_btn"
+        android:id="@+id/apply_changes_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_margin="5dp"
+        android:text="Aplicar cambios"
+        android:background="@drawable/buttons"
+        android:layout_below="@+id/product_description_maintain"
+        android:hint="Descripción del producto"
+        android:layout_marginTop="2dp"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/delete_product_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="12dp"
-            android:layout_margin="5dp"
-            android:text="Aplicar cambios"
+            android:layout_margin="30dp"
+            android:text="Borra este producto"
+            android:layout_marginBottom="30dp"
             android:background="@drawable/buttons"
-            android:layout_below="@+id/product_description_maintain"
+            android:layout_below="@+id/apply_changes_btn"
             android:hint="Descripción del producto"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="30dp"
             android:textAlignment="center"
             android:textSize="18dp"
             android:textColor="@android:color/white"/>

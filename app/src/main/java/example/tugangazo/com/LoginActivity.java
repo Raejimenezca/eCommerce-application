@@ -19,6 +19,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.rey.material.widget.CheckBox;
 
+import example.tugangazo.com.Admin.AdminCategoryActivity;
 import example.tugangazo.com.Model.Users;
 import example.tugangazo.com.Prevalent.Prevalent;
 import io.paperdb.Paper;
@@ -28,7 +29,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText inputPhoneNumber, inputPassword;
     private Button loginButton;
     private ProgressDialog loadingBar;
-    private TextView adminLink, notAdminLink;
+    private TextView adminLink, notAdminLink, forgetPasswordLink;
 
     private String parentDBName = "Users";
     private CheckBox chkBoxRememberMe;
@@ -43,7 +44,9 @@ public class LoginActivity extends AppCompatActivity {
         inputPhoneNumber = (EditText) findViewById(R.id.login_phone_number_input);
         adminLink = (TextView) findViewById(R.id.admin_panel_link);
         notAdminLink = (TextView) findViewById(R.id.not_admin_panel_link);
+        forgetPasswordLink = findViewById(R.id.forget_password_link);
         loadingBar = new ProgressDialog(this);
+
 
         chkBoxRememberMe = (CheckBox) findViewById(R.id.remember_me_chbx);
         Paper.init(this);
@@ -52,6 +55,15 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 LoginUser();
+            }
+        });
+
+        forgetPasswordLink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, ResetPasswordActivity.class);
+                intent.putExtra("check", "login");
+                startActivity(intent);
             }
         });
 

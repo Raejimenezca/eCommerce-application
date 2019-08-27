@@ -1,4 +1,4 @@
-package example.tugangazo.com;
+package example.tugangazo.com.Admin;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -29,6 +29,8 @@ import com.google.firebase.storage.UploadTask;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.HashMap;
+
+import example.tugangazo.com.R;
 
 public class AdminAddNewProductActivity extends AppCompatActivity {
     private String categoryName, description, price, pr_name, saveCurrentDate, saveCurrentTime;
@@ -181,7 +183,7 @@ public class AdminAddNewProductActivity extends AppCompatActivity {
         productMap.put("image", downloadImageUrl);
         productMap.put("category", categoryName);
         productMap.put("price", price);
-        productMap.put("pr_name", pr_name);
+        productMap.put("pr_name", pr_name.toLowerCase());
 
         productsRef.child(productRandomKey).updateChildren(productMap).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override

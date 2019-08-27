@@ -1,4 +1,4 @@
-package example.tugangazo.com;
+package example.tugangazo.com.Admin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import example.tugangazo.com.HomeActivity;
+import example.tugangazo.com.MainActivity;
+import example.tugangazo.com.R;
 
 public class AdminCategoryActivity extends AppCompatActivity {
     private ImageView phoneProducts, tools, musicInstruments, petsProducts;

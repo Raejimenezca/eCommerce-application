@@ -11,6 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
+
 import com.rey.material.widget.EditText;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -23,7 +25,7 @@ import example.tugangazo.com.Model.Products;
 import example.tugangazo.com.ViewHolder.ProductViewHolder;
 
 public class SearchProductsActivity extends AppCompatActivity {
-    private Button searchBtn;
+    private ImageView searchBtn;
     private EditText inputText;
     private RecyclerView searchList;
     private String searchInput;
@@ -41,7 +43,7 @@ public class SearchProductsActivity extends AppCompatActivity {
         searchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                searchInput = inputText.getText().toString();
+                searchInput = inputText.getText().toString().toLowerCase();
 
                 onStart();
             }

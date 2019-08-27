@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txt"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:hint="Tu nombre..."/>
@@ -33,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/shippment_name"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:layout_marginLeft="20dp"
         android:inputType="number"
         android:layout_marginRight="20dp"
@@ -44,7 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/shippment_phone_number"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:hint="Dirección donde haremos el envío..."/>
@@ -54,7 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/shippment_address"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:hint="Tu ciudad..."/>
@@ -63,12 +63,12 @@
         android:id="@+id/confirm_final_order_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="20dp"
+        android:layout_below="@+id/shippment_city"
+        android:layout_margin="50dp"
+        android:layout_marginTop="100dp"
         android:text="Confirmar"
         android:background="@color/colorPrimaryDark"
         android:textColor="@android:color/white"
-        android:textSize="20dp"
-        />
+        android:textSize="20dp" />
 
 </RelativeLayout>

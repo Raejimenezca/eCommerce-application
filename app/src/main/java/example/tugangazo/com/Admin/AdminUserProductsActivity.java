@@ -1,4 +1,4 @@
-package example.tugangazo.com;
+package example.tugangazo.com.Admin;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +17,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import example.tugangazo.com.Model.Cart;
 import example.tugangazo.com.Prevalent.Prevalent;
+import example.tugangazo.com.R;
 import example.tugangazo.com.ViewHolder.CartViewHolder;
 
 public class AdminUserProductsActivity extends AppCompatActivity {

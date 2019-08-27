@@ -14,7 +14,8 @@
         android:layout_height="100dp"
         android:src="@drawable/applogo"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"/>
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="130dp"/>
 
     <EditText
         android:id="@+id/login_phone_number_input"
@@ -30,7 +31,7 @@
         android:textColor="@color/colorPrimaryDark"
         android:textColorHint="@color/colorPrimaryDark"
         android:textSize="17sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/login_password_input"

@@ -1,4 +1,4 @@
-package example.tugangazo.com;
+package example.tugangazo.com.Buyers;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -8,12 +8,10 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,12 +29,11 @@ import com.google.firebase.storage.StorageTask;
 import com.squareup.picasso.Picasso;
 import com.theartofdev.edmodo.cropper.CropImage;
 
-import org.w3c.dom.Text;
-
 import java.util.HashMap;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 import example.tugangazo.com.Prevalent.Prevalent;
+import example.tugangazo.com.R;
 
 public class SettingsActivity extends AppCompatActivity {
     private CircleImageView profileImageView;

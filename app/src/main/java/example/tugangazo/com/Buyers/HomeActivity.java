@@ -1,4 +1,4 @@
-package example.tugangazo.com;
+package example.tugangazo.com.Buyers;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -36,6 +36,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 import example.tugangazo.com.Admin.AdminMaintainProductsActivity;
 import example.tugangazo.com.Model.Products;
 import example.tugangazo.com.Prevalent.Prevalent;
+import example.tugangazo.com.R;
 import example.tugangazo.com.ViewHolder.ProductViewHolder;
 import io.paperdb.Paper;
 
@@ -108,7 +109,7 @@ public class HomeActivity extends AppCompatActivity
     protected void onStart() {
         super.onStart();
 
-        FirebaseRecyclerOptions<Products> options = new FirebaseRecyclerOptions.Builder<Products>().setQuery(productsRef, Products.class).build();
+        FirebaseRecyclerOptions<Products> options = new FirebaseRecyclerOptions.Builder<Products>().setQuery(productsRef.orderByChild("productState").equalTo("Approved"), Products.class).build();
 
         FirebaseRecyclerAdapter<Products, ProductViewHolder> adapter = new FirebaseRecyclerAdapter<Products, ProductViewHolder>(options) {
             @Override

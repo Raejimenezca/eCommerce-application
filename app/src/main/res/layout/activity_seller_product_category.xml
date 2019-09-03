@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo4"
-    tools:context=".Admin.AdminCategoryActivity">
+    tools:context=".Sellers.SellerProductCategoryActivity">
 
     <TextView
         android:id="@+id/slogan_category"
@@ -27,7 +27,7 @@
         android:orientation="horizontal"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="100dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp">
 
@@ -128,51 +128,6 @@
             android:src="@drawable/footwear"/>
 
     </LinearLayout>
-
-    <Button
-        android:id="@+id/check_orders_btn"
-        android:layout_width="match_parent"
-        android:layout_height="42dp"
-        android:layout_above="@+id/admin_logout_btn"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
-        android:background="@color/colorPrimaryDark"
-        android:text="Comprobar nuevas ordenes"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
-        android:textAllCaps="false"
-        />
-
-    <Button
-        android:id="@+id/admin_logout_btn"
-        android:layout_width="match_parent"
-        android:layout_height="42dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="15dp"
-        android:background="@color/colorPrimaryDark"
-        android:text="Salir"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
-        android:textAllCaps="false"
-        />
-
-    <Button
-        android:id="@+id/maintain_btn"
-        android:layout_width="match_parent"
-        android:layout_height="42dp"
-        android:layout_above="@+id/check_orders_btn"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
-        android:background="@color/colorPrimaryDark"
-        android:text="Modificar datos de productos"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
-        android:textAllCaps="false"
-        />
 
 </RelativeLayout>
 

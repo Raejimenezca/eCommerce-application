@@ -1,4 +1,4 @@
-package example.tugangazo.com;
+package example.tugangazo.com.Buyers;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,6 +21,7 @@ import java.util.Calendar;
 import java.util.HashMap;
 
 import example.tugangazo.com.Prevalent.Prevalent;
+import example.tugangazo.com.R;
 
 public class ConfirmFinalOrderActivity extends AppCompatActivity {
 

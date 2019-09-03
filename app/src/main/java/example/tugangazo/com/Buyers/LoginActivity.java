@@ -1,4 +1,4 @@
-package example.tugangazo.com;
+package example.tugangazo.com.Buyers;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,9 +19,11 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.rey.material.widget.CheckBox;
 
-import example.tugangazo.com.Admin.AdminCategoryActivity;
+import example.tugangazo.com.Admin.AdminHomeActivity;
+import example.tugangazo.com.Sellers.SellerProductCategoryActivity;
 import example.tugangazo.com.Model.Users;
 import example.tugangazo.com.Prevalent.Prevalent;
+import example.tugangazo.com.R;
 import io.paperdb.Paper;
 
 public class LoginActivity extends AppCompatActivity {
@@ -130,7 +132,7 @@ public class LoginActivity extends AppCompatActivity {
                                 Toast.makeText(LoginActivity.this, "Has ingresado como administrador satisfactoriamente!", Toast.LENGTH_SHORT).show();
                                 loadingBar.dismiss();
 
-                                Intent intent = new Intent(LoginActivity.this, AdminCategoryActivity.class);
+                                Intent intent = new Intent(LoginActivity.this, AdminHomeActivity.class);
                                 startActivity(intent);
                             }
                             else if (parentDBName.equals("Users")){

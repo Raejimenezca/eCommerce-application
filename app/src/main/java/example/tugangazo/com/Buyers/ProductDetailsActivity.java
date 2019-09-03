@@ -1,4 +1,4 @@
-package example.tugangazo.com;
+package example.tugangazo.com.Buyers;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,7 +14,6 @@ import android.widget.Toast;
 import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -28,6 +27,7 @@ import java.util.HashMap;
 
 import example.tugangazo.com.Model.Products;
 import example.tugangazo.com.Prevalent.Prevalent;
+import example.tugangazo.com.R;
 
 public class ProductDetailsActivity extends AppCompatActivity {
 

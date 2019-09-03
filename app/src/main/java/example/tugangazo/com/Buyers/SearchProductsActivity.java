@@ -1,4 +1,4 @@
-package example.tugangazo.com;
+package example.tugangazo.com.Buyers;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 
 import com.rey.material.widget.EditText;
@@ -22,6 +21,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
 import example.tugangazo.com.Model.Products;
+import example.tugangazo.com.R;
 import example.tugangazo.com.ViewHolder.ProductViewHolder;
 
 public class SearchProductsActivity extends AppCompatActivity {

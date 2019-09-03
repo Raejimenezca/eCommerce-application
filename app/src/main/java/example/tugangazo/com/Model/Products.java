@@ -1,13 +1,13 @@
 package example.tugangazo.com.Model;
 
 public class Products {
-    private String pr_name, description, price, image, category, pid, date, time;
+    private String pr_name, description, price, image, category, pid, date, time, productState;
 
     public Products() {
 
     }
 
-    public Products(String pr_name, String description, String price, String image, String category, String pid, String date, String time) {
+    public Products(String pr_name, String description, String price, String image, String category, String pid, String date, String time, String productState) {
         this.pr_name = pr_name;
         this.description = description;
         this.price = price;
@@ -16,6 +16,7 @@ public class Products {
         this.pid = pid;
         this.date = date;
         this.time = time;
+        this.productState = productState;
     }
 
     public String getPr_name() {
@@ -80,5 +81,13 @@ public class Products {
 
     public void setTime(String time) {
         this.time = time;
+    }
+
+    public String getProductState() {
+        return productState;
+    }
+
+    public void setProductState(String productState) {
+        this.productState = productState;
     }
 }

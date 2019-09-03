@@ -1,4 +1,4 @@
-package example.tugangazo.com;
+package example.tugangazo.com.Buyers;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -28,6 +28,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import example.tugangazo.com.Model.Cart;
 import example.tugangazo.com.Prevalent.Prevalent;
+import example.tugangazo.com.R;
 import example.tugangazo.com.ViewHolder.CartViewHolder;
 
 public class CartActivity extends AppCompatActivity {

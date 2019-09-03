@@ -23,6 +23,7 @@ import com.squareup.picasso.Picasso;
 import java.util.HashMap;
 
 import example.tugangazo.com.R;
+import example.tugangazo.com.Sellers.SellerProductCategoryActivity;
 
 public class AdminMaintainProductsActivity extends AppCompatActivity {
     private Button applyChangesBtn, deleteBtn;
@@ -70,7 +71,7 @@ public class AdminMaintainProductsActivity extends AppCompatActivity {
         productsRef.removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
-                Intent intent = new Intent(AdminMaintainProductsActivity.this, AdminCategoryActivity.class);
+                Intent intent = new Intent(AdminMaintainProductsActivity.this, SellerProductCategoryActivity.class);
                 startActivity(intent);
                 finish();
 
@@ -106,7 +107,7 @@ public class AdminMaintainProductsActivity extends AppCompatActivity {
                     if (task.isSuccessful()){
                         Toast.makeText(AdminMaintainProductsActivity.this, "Los cambios han sido aplicados satisfactoriamente.", Toast.LENGTH_SHORT).show();
 
-                        Intent intent = new Intent(AdminMaintainProductsActivity.this, AdminCategoryActivity.class);
+                        Intent intent = new Intent(AdminMaintainProductsActivity.this, SellerProductCategoryActivity.class);
                         startActivity(intent);
                         finish();
                     }

@@ -1,4 +1,4 @@
-package example.tugangazo.com;
+package example.tugangazo.com.Buyers;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -24,6 +24,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.HashMap;
 
 import example.tugangazo.com.Prevalent.Prevalent;
+import example.tugangazo.com.R;
 
 public class ResetPasswordActivity extends AppCompatActivity {
     private String check = "";
